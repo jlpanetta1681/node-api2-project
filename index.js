@@ -3,7 +3,7 @@ const express = require('express');
 const Posts = require('./data/db.js');
 
 const server = express();
-const port = 5000;
+const PORT = process.env.PORT || 6000;
 
 server.use(express.json()); // gives Express the ability to parse the req.body
 
@@ -159,6 +159,6 @@ server.get('/api/posts/:id', (req, res) => {
 	});
 });
 
-server.listen(5000, () => {
-	console.log('\n*** Server Running on http://localhost:5000 ***\n');
+server.listen(PORT, () => {
+	console.log(`Server is listening at http://localhost:${PORT}`);
 });
