@@ -9,11 +9,13 @@
 		"server": "nodemon index.js"
 	},
 	"dependencies": {
+		"D": "^1.0.0",
+		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
 		"knex": "^0.21.2",
 		"sqlite3": "^5.0.0"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.4"
+		"nodemon": "^2.0.6"
 	}
 }
