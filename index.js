@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 
 const Posts = require('./data/db.js');
